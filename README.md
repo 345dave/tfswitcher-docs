@@ -7,6 +7,18 @@ and users who prefer a visual workflow.
 
 [Install TF Switcher from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=345Dave.tfswitcher)
 
+## Current release
+
+### 1.16.3 — 16 September 2026
+
+- Added a live macOS demonstration covering workspace detection, Terraform
+  activation, and terminal verification.
+- Added public documentation, homepage, and support links.
+- Verified the published extension on Windows, macOS, and Linux.
+
+The Visual Studio Marketplace is the official installation and update source
+for TF Switcher.
+
 ## See it in action
 
 TF Switcher reads the workspace requirement, offers a compatible Terraform
