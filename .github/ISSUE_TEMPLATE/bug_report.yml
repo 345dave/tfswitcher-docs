@@ -1,0 +1,73 @@
+name: Bug report
+description: Report a reproducible problem with TF Switcher.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve TF Switcher. Do not include credentials,
+        access tokens, internal Terraform configuration, or other secrets.
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: architecture
+    attributes:
+      label: Processor architecture
+      description: For example, x64, ARM64, Apple Silicon, or Intel.
+    validations:
+      required: true
+  - type: input
+    id: vscode-version
+    attributes:
+      label: VS Code version
+    validations:
+      required: true
+  - type: input
+    id: extension-version
+    attributes:
+      label: TF Switcher version
+      placeholder: 1.16.3
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe the smallest safe example that reproduces the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include the exact error text after removing sensitive information.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Additional diagnostics
+      description: Include relevant cache, proxy, or network details only after redaction.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Sensitive information
+      options:
+        - label: I have removed credentials, tokens, private configuration, and other secrets.
+          required: true

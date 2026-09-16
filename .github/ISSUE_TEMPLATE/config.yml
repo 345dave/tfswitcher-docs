@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Troubleshooting guide
+    url: https://github.com/345dave/tfswitcher-docs/blob/main/TROUBLESHOOTING.md
+    about: Check common installation, network, cache, and terminal issues first.
+  - name: Security reporting
+    url: https://github.com/345dave/tfswitcher-docs/issues/new?template=security_contact.yml
+    about: Request a private channel without publishing vulnerability details.

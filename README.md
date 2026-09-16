@@ -53,9 +53,13 @@ available offline.
 
 ## Support and feedback
 
-[Open an issue](https://github.com/345dave/tfswitcher-docs/issues) to report a
-defect or request a feature. Do not include Terraform credentials, access
-tokens, internal configuration, or other secrets in reports.
+- [Troubleshooting guide](TROUBLESHOOTING.md)
+- [Report a bug](https://github.com/345dave/tfswitcher-docs/issues/new?template=bug_report.yml)
+- [Request a feature](https://github.com/345dave/tfswitcher-docs/issues/new?template=feature_request.yml)
+- [Security policy](SECURITY.md)
+
+Do not include Terraform credentials, access tokens, internal configuration, or
+other secrets in reports.
 
 This repository contains public documentation and media for TF Switcher. The
 extension's implementation repository is maintained separately.
