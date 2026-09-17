@@ -54,6 +54,7 @@ available offline.
 ## Support and feedback
 
 - [Troubleshooting guide](TROUBLESHOOTING.md)
+- [Security and verification](SECURITY-VERIFICATION.md)
 - [Report a bug](https://github.com/345dave/tfswitcher-docs/issues/new?template=bug_report.yml)
 - [Request a feature](https://github.com/345dave/tfswitcher-docs/issues/new?template=feature_request.yml)
 - [Security policy](SECURITY.md)
