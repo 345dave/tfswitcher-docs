@@ -9,6 +9,15 @@ and users who prefer a visual workflow.
 
 ## Current release
 
+### 1.16.5 — 17 September 2026
+
+- Added an optional Ko-fi Sponsor link to the Marketplace and VS Code extension
+  details.
+- Added support information and an opt-in public supporters page.
+- All extension features remain free to use.
+
+## Previous release
+
 ### 1.16.4 — 16 September 2026
 
 - Added offline import for an approved Terraform ZIP and its matching HashiCorp
