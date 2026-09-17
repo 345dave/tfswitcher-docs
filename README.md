@@ -9,12 +9,16 @@ and users who prefer a visual workflow.
 
 ## Current release
 
-### 1.16.3 — 16 September 2026
+### 1.16.4 — 16 September 2026
 
-- Added a live macOS demonstration covering workspace detection, Terraform
-  activation, and terminal verification.
-- Added public documentation, homepage, and support links.
-- Verified the published extension on Windows, macOS, and Linux.
+- Added offline import for an approved Terraform ZIP and its matching HashiCorp
+  checksum file—useful when direct downloads are blocked by enterprise policy.
+- Hardened ZIP processing with platform, filename, archive-layout, size,
+  checksum, and executable-version checks before Terraform enters the cache.
+- Added automated secret scanning, dependency auditing, VSIX inspection, and
+  package checksum generation for releases.
+- Added a Windows CI road test that imports and runs a genuine
+  `terraform.exe`, alongside macOS and Linux validation.
 
 The Visual Studio Marketplace is the official installation and update source
 for TF Switcher.
@@ -32,6 +36,8 @@ version, activates it for new VS Code terminals, and verifies the result.
 - Does not require access to GitHub when using the extension.
 - Detects `required_version` constraints in Terraform workspaces.
 - Verifies every downloaded ZIP against HashiCorp's SHA-256 checksum.
+- Imports approved Terraform ZIPs and matching checksums for offline or
+  restricted-network installation.
 - Changes `PATH` only for new or relaunched VS Code terminals.
 - Reuses previously downloaded versions from a local cache.
 - Does not collect telemetry or request Terraform credentials.
@@ -49,7 +55,9 @@ version, activates it for new VS Code terminals, and verifies the result.
 Installing a Terraform version requires HTTPS access to
 `releases.hashicorp.com`. Loading the available-version list requires access to
 `api.releases.hashicorp.com`. Previously cached Terraform versions remain
-available offline.
+available offline. If those endpoints are unavailable, use **Import Terraform
+ZIP** with an official Terraform archive and its matching HashiCorp checksum
+file supplied by your IT team or another trusted source.
 
 ## Support and feedback
 
