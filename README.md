@@ -59,6 +59,15 @@ available offline. If those endpoints are unavailable, use **Import Terraform
 ZIP** with an official Terraform archive and its matching HashiCorp checksum
 file supplied by your IT team or another trusted source.
 
+## Support TF Switcher
+
+TF Switcher is free to use, with all features available without contributing.
+If it saves you time, [support its development on Ko-fi](https://ko-fi.com/345dave).
+Optional contributions help fund maintenance, testing, and improvements.
+
+Supporters can choose to be thanked on the [supporters page](SUPPORTERS.md).
+See that page for how to opt in; recognition is entirely optional.
+
 ## Support and feedback
 
 - [Troubleshooting guide](TROUBLESHOOTING.md)
