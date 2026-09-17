@@ -9,25 +9,23 @@ and users who prefer a visual workflow.
 
 ## Current release
 
+### 1.16.6 — 17 September 2026
+
+- Improved `required_version` detection by ignoring HCL comments and supporting
+  Terraform JSON configuration files.
+- Added `.terraform-version` project pins with a sidebar action for writing the
+  active version to a project.
+- Expanded release discovery so older projects receive compatible-version
+  recommendations while the sidebar stays concise.
+
+## Previous release
+
 ### 1.16.5 — 17 September 2026
 
 - Added an optional Ko-fi Sponsor link to the Marketplace and VS Code extension
   details.
 - Added support information and an opt-in public supporters page.
 - All extension features remain free to use.
-
-## Previous release
-
-### 1.16.4 — 16 September 2026
-
-- Added offline import for an approved Terraform ZIP and its matching HashiCorp
-  checksum file—useful when direct downloads are blocked by enterprise policy.
-- Hardened ZIP processing with platform, filename, archive-layout, size,
-  checksum, and executable-version checks before Terraform enters the cache.
-- Added automated secret scanning, dependency auditing, VSIX inspection, and
-  package checksum generation for releases.
-- Added a Windows CI road test that imports and runs a genuine
-  `terraform.exe`, alongside macOS and Linux validation.
 
 The Visual Studio Marketplace is the official installation and update source
 for TF Switcher.
@@ -44,6 +42,7 @@ version, activates it for new VS Code terminals, and verifies the result.
 - Installs official Terraform releases directly from HashiCorp.
 - Does not require access to GitHub when using the extension.
 - Detects `required_version` constraints in Terraform workspaces.
+- Reads and writes exact project versions through `.terraform-version`.
 - Verifies every downloaded ZIP against HashiCorp's SHA-256 checksum.
 - Imports approved Terraform ZIPs and matching checksums for offline or
   restricted-network installation.
