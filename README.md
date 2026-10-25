@@ -1,34 +1,10 @@
-# TF Switcher
+# Terraform Version Switcher for VS Code (TF Switcher)
 
-TF Switcher is a Visual Studio Code extension for installing and switching
-workspace-specific Terraform versions without a command-line version manager.
-It is designed for managed enterprise devices, teams working across projects,
-and users who prefer a visual workflow.
+Switch Terraform versions in Visual Studio Code without a command-line version
+manager. TF Switcher is a visual Terraform version manager for Windows, macOS
+and Linux, and an alternative to tools such as `tfenv` and `tfswitch`.
 
 [Install TF Switcher from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=345Dave.tfswitcher)
-
-## Current release
-
-### 1.16.6 — 17 September 2026
-
-- Improved `required_version` detection by ignoring HCL comments and supporting
-  Terraform JSON configuration files.
-- Added `.terraform-version` project pins with a sidebar action for writing the
-  active version to a project.
-- Expanded release discovery so older projects receive compatible-version
-  recommendations while the sidebar stays concise.
-
-## Previous release
-
-### 1.16.5 — 17 September 2026
-
-- Added an optional Ko-fi Sponsor link to the Marketplace and VS Code extension
-  details.
-- Added support information and an opt-in public supporters page.
-- All extension features remain free to use.
-
-The Visual Studio Marketplace is the official installation and update source
-for TF Switcher.
 
 ## See it in action
 
@@ -36,6 +12,13 @@ TF Switcher reads the workspace requirement, offers a compatible Terraform
 version, activates it for new VS Code terminals, and verifies the result.
 
 ![TF Switcher detects, activates, and verifies Terraform on macOS](images/tfswitcher-demo.gif)
+
+## How to switch Terraform versions in VS Code
+
+1. Open a Terraform project in VS Code.
+2. Select the TF Switcher icon in the Activity Bar.
+3. Choose a compatible or exact Terraform version.
+4. Open a new terminal, or relaunch an existing terminal to use the selected version.
 
 ## Highlights
 
@@ -57,6 +40,51 @@ version, activates it for new VS Code terminals, and verifies the result.
 | Windows | x64, ARM64, x86 |
 | macOS | Apple Silicon, Intel |
 | Linux | x64, ARM64, x86 |
+
+## Frequently asked questions
+
+### Is TF Switcher a tfenv alternative for Windows?
+
+Yes. TF Switcher offers a visual VS Code workflow instead of a command-line
+version manager. It supports Windows, macOS and Linux.
+
+### How do I use a different Terraform version for each project?
+
+Select a version in the project's VS Code workspace and use **Pin Active Version
+to Project** to write it to `.terraform-version`. TF Switcher also reads
+Terraform `required_version` constraints and recommends a compatible release.
+
+### Can I use Terraform versions offline?
+
+Cached versions work offline. For a version that is not cached, import its
+official Terraform ZIP and matching HashiCorp checksum list from HashiCorp or a
+trusted IT source.
+
+### How are Terraform downloads verified?
+
+TF Switcher checks each ZIP against HashiCorp's published SHA-256 checksum,
+validates the archive contents, and runs the executable to confirm its version.
+
+## Release history
+
+### 1.16.6 - 17 September 2026
+
+- Improved `required_version` detection by ignoring HCL comments and supporting
+  Terraform JSON configuration files.
+- Added `.terraform-version` project pins with a sidebar action for writing the
+  active version to a project.
+- Expanded release discovery so older projects receive compatible-version
+  recommendations while the sidebar stays concise.
+
+### 1.16.5 - 17 September 2026
+
+- Added an optional Ko-fi Sponsor link to the Marketplace and VS Code extension
+  details.
+- Added support information and an opt-in public supporters page.
+- All extension features remain free to use.
+
+The Visual Studio Marketplace is the official installation and update source
+for TF Switcher.
 
 ## Network requirements
 
